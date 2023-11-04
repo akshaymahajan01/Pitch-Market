@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* register form css for input &  button */
+
+input,
+select,
+textarea {
+    min-height: 40px !important;
+    border: 2px solid #b9b9b9 !important;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+    border: 3px solid #023002 !important;
+}
+
+button {
+    height: 40px !important
+}
+
+
+table {
+    border: #6a6a6a 1px solid !important
+}
+
+
+.max-width {
+    max-width: max-content !important;
+}
+
+
+/* search bar css */
+.suggestions-list {
+    position: absolute;
+    top: 100%; /* Adjust this value to position the suggestions list below the input field */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestions-list li {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f2f2f2;
+  }
+  
